@@ -1,0 +1,18 @@
+body {
+    padding: 0px;
+    margin: 0px;
+}
+ul {
+    list-style-type: none;
+}
+
+li {
+    float: left;
+    background: #ffffff;
+    border: 1px solid #695555;
+    border-radius: 5px;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.clear {clear: both;}
