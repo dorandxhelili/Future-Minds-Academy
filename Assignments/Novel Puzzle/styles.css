@@ -1,0 +1,38 @@
+.span1 {
+    font-size: 60px;
+    text-decoration: underline #ff4500;
+    font-weight: bold;
+    font-family: fantasy;
+
+}
+
+.span2 {
+    font-size: 40px;
+    font-family: fantasy;
+}
+
+.span3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.span4 {
+    font-size: 100px;
+    text-decoration: underline #ff4500;
+    font-weight: bold;
+    float: left;
+    font-family: fantasy;
+    margin-right: 10px;
+
+}
+
+.span5 {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.span6 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
