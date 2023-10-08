@@ -1,0 +1,10 @@
+.h1:hover{
+    color: rgb(3, 215, 180);
+}
+.p:hover{
+    color: rgb(210, 207, 203);
+}
+p::first-letter{
+    font-size: 50px;
+    margin-right: 5px;
+}
