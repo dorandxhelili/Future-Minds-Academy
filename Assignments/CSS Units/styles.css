@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 2em;
+    text-decoration: underline;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+section:nth-child(odd) {
+    background-color: rgb(66, 57, 58);
+    color: white;
+}
+
+section:nth-child(even) {
+    background-color: rgb(230, 202, 102);
+}
+
+section {
+    height: 25vh;
+    margin: 0;
+    padding: 0;
+}
+
+hr {
+    border-color: red;
+    border-width: 2px;
+    width: 33%;
+    margin-top: 50px;
+}
