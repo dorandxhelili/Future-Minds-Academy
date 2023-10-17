@@ -7,7 +7,10 @@ body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: center;
     padding: 0 200px 0 200px;
-    cursor: url('contents/rrow-icon.png')10 10, auto;
+}
+
+* {
+    cursor: url('contents/rrow-icon.png') 5 5, auto;
 }
 
 h1 {
@@ -147,7 +150,7 @@ button {
     padding: 6px 12px;
     background: #e82a2a;
     transition: all 0.2s ease;
-    cursor: pointer;
+    cursor: url('contents/rrow-icon.png')10 10, auto;
 }
 
 button:hover {
@@ -192,30 +195,31 @@ footer {
 }
 
 .back-to-top {
-	position: fixed;
-	bottom: 17px;
-	right: 2rem;
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	background-color: #dc143c;
-	border-radius: 0.5rem;
-	padding: 0.5rem;
-	text-decoration: none;
-	transition: 0.2s ease-out;
+    position: fixed;
+    bottom: 17px;
+    right: 2rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #dc143c;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    text-decoration: none;
+    transition: 0.2s ease-out;
 }
 
 .back-to-top span {
-	color: #fff;
-	font-size: 1rem;
-	transition: 0.2s ease-out;
+    color: #fff;
+    font-size: 1rem;
+    transition: 0.2s ease-out;
 }
 
 .back-to-top:hover {
-	background-color: #be1a3b;
+    background-color: #be1a3b;
 }
+
 .back-to-top:hover span {
-	transform: translateY(-4px);
+    transform: translateY(-4px);
 }
 
 /*Project_Page*/
