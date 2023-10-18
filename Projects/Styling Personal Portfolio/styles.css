@@ -10,23 +10,26 @@ body {
 }
 
 * {
-    cursor: url('contents/rrow-icon.png') 5 5, auto;
+    cursor: url(contents/arrow-icon.png) 5 5, auto;
 }
 
 h1 {
     font-family: Lucida Handwriting;
 }
 
-.section1 {
+.blocks {
     display: block;
-    background-color: rgb(148, 196, 226);
-    padding: 30px;
     border-radius: 20px;
+    padding: 30px;
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+.section1 {
+    background-color: rgb(148, 196, 226);
     box-shadow: 0px 3px 20px 6px rgb(174, 174, 248);
     padding: 2px 3px 2px 6px;
     margin: 20px 10px 2px 11px;
-    overflow: hidden;
-    transition: transform 0.2s;
 }
 
 .section1:hover {
@@ -37,15 +40,10 @@ h1 {
 }
 
 .section2 {
-    display: block;
     background-color: rgb(217, 228, 146);
-    padding: 30px;
-    border-radius: 20px;
     box-shadow: 0px 3px 20px 6px rgb(174, 174, 248);
     padding: 2px 3px 2px 6px;
     margin: 38px 10px 0 10px;
-    overflow: hidden;
-    transition: transform 0.2s;
 }
 
 .section2:hover {
@@ -56,15 +54,10 @@ h1 {
 }
 
 .section3 {
-    display: block;
     background-color: rgb(74, 239, 223);
-    padding: 30px;
-    border-radius: 20px;
     box-shadow: 0px 3px 20px 6px rgb(174, 174, 248);
     padding: 1px 3px 14px 7px;
     margin: 33px 10px 14px 17px;
-    overflow: hidden;
-    transition: transform 0.2s;
 }
 
 .section3:hover {
@@ -75,15 +68,10 @@ h1 {
 }
 
 .section4 {
-    display: block;
     background-color: rgb(204, 241, 130);
-    padding: 30px;
-    border-radius: 20px;
     box-shadow: 0px 3px 20px 6px rgb(174, 174, 248);
     padding: 1px 3px 14px 7px;
     margin: 33px 10px 14px 17px;
-    overflow: hidden;
-    transition: transform 0.2s;
 }
 
 .section4:hover {
@@ -94,9 +82,7 @@ h1 {
 }
 
 .pschool {
-    display: block;
     background-color: rgb(235, 236, 230);
-    border-radius: 20px;
     box-shadow: 0px 0px 5px 4px rgb(174, 174, 248);
     padding: 8px 4px 8px 6px;
     margin: 0% 4% 0 0%;
@@ -104,9 +90,7 @@ h1 {
 }
 
 .hschool {
-    display: block;
     background-color: rgb(235, 236, 230);
-    border-radius: 20px;
     box-shadow: 0px 0px 5px 4px rgb(174, 174, 248);
     padding: 8px 4px 8px 6px;
     margin: 1% 4% 0 0%;
@@ -114,9 +98,7 @@ h1 {
 }
 
 .university {
-    display: block;
     background-color: rgb(235, 236, 230);
-    border-radius: 20px;
     box-shadow: 0px 0px 5px 4px rgb(174, 174, 248);
     padding: 8px 4px 8px 6px;
     margin: 1% 4% 2.3% 0%;
@@ -150,7 +132,6 @@ button {
     padding: 6px 12px;
     background: #e82a2a;
     transition: all 0.2s ease;
-    cursor: url('contents/rrow-icon.png')10 10, auto;
 }
 
 button:hover {
@@ -206,6 +187,7 @@ footer {
     padding: 0.5rem;
     text-decoration: none;
     transition: 0.2s ease-out;
+
 }
 
 .back-to-top span {
