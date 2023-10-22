@@ -1,0 +1,21 @@
+body {
+    background-color: bisque;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centered {
+    background-color: white;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 2em;
+    width: 220px;
+    height: 100px;
+}
+.random {
+    text-align: center;
+    order: 1;
+}
