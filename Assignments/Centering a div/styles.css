@@ -1,21 +1,36 @@
-body {
-    background-color: bisque;
-    margin: 0;
-    padding: 0;
+body{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh; 
+    margin: 0;
+    background-color: bisque;
 }
 
-.centered {
-    background-color: white;
+.box {
+    width: 200px;
+    height: 150px;
+    font-size: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
     border: 1px solid black;
-    text-align: center;
-    font-size: 2em;
-    width: 220px;
-    height: 100px;
 }
-.random {
-    text-align: center;
-    order: 1;
+
+.flex {
+    flex-direction: column;
+}
+
+.box:nth-child(1) {
+    align-self: center;
+    font-size: 2em;
+    font-weight: bolder;
+    text-align: left;
+}
+p {
+    position: relative;
+    text-align: left;
+    bottom: 50px;
+    left: 6px;
 }
