@@ -9,13 +9,11 @@ body {
 }
 
 header {
-    grid-column: 1;
     grid-column-end: span 4;
     background-color: rgb(243, 120, 140);
 }
 
 footer {
-    grid-row-start: 3;
     grid-column-end: span 4;
     background-color: rgb(243, 120, 140);
 }
