@@ -1,3 +1,7 @@
+body {
+    padding: 0 10px;
+}
+
 img {
     margin-right: 3px;
     cursor: pointer;
@@ -11,13 +15,12 @@ img:hover {
     width: 310px;
     padding: 10px;
 }
-p{
+p {
     border: 1px solid;
     border-radius: 10px;
     display: inline-block;
     font-size: 18px;
-    padding-left: 20px;
-    width: 95%;
-    height: 40%;
+    padding-left: 10px;
     background-color: bisque;
+    height: 22em;
 }
