@@ -1,0 +1,20 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 350px;
+    filter: blur(10px);
+    cursor: pointer;
+    transition-property: transform, filter, width;
+    transition-duration: .9s, 0.2s ;
+    transition-delay: .2s;
+}
+
+img:hover {
+    transform: rotate(720deg);
+    filter: none;
+    width: 450px;
+}
