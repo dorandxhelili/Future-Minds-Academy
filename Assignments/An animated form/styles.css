@@ -1,0 +1,78 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form-container {
+  background-color: rgb(169, 231, 200);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  position: relative;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc; /* Initial border color */
+  border-radius: 4px;
+  margin-top: 6px;
+  box-sizing: border-box;
+  transition: border-color 0.3s; /* Adding a transition for a smooth effect */
+}
+
+button {
+  background-color: rgb(82, 82, 195);
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.animated-label {
+  position: absolute;
+  top: 140%;
+  left: 2px;
+  transition: transform 0.3s, font-size 0.3s;
+  transform-origin: 0% 0%;
+  font-size: 16px;
+  color: #666;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.form-group:focus-within .animated-label,
+.form-group input:not(:placeholder-shown) + .animated-label {
+  transform: translateY(-100%) scale(0.8);
+  font-size: 0.8em;
+  color: rgb(82, 82, 195); 
+  opacity: 1; 
+}
+
+.spinner-container {
+  position: absolute;
+  top: 82%;
+  left: 89%;
+  transform: translate(-50%, -50%);
+}
+
+.spinner {
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
