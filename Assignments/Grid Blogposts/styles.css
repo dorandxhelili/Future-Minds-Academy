@@ -1,3 +1,4 @@
+/* Left Section */
 body {
     margin: 0;
     padding: 0;
@@ -33,7 +34,7 @@ h1 {
     font-size: 1.5em;
 }
 
-button {
+.button {
     justify-self: end;
     width: 100px;
     background-color: rgb(61, 80, 93);
@@ -43,15 +44,20 @@ button {
     margin-top: 10px;
     padding: 10px 20px 10px 20px;
 }
-button:hover {
+.button:hover {
     background-color: rgb(0, 132, 255);
 }
+
+/* Right Section */
 
 .article {
     grid-column: 2/3;
     height: 100vh;
     background-color: white;
     margin: 50px 50px;
+    overflow: auto;
+    overflow-x: hidden;
+    background-color: white;
 }
 
 .PinnedPost {
@@ -123,4 +129,27 @@ img {
 
 .JavaScript {
     background-color: red;
+}
+
+@media only screen and (max-width: 640px) {
+    
+    .grid-container {
+        grid-template-columns: 1fr; 
+        grid-template-rows: auto auto;
+        height: 100vh;
+    }
+
+    .aside {
+        grid-column: auto; /
+        padding: 20px; 
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        text-align: center; 
+    }
+
+    .article {
+        grid-column: auto; 
+        margin: 20px; 
+    }
 }

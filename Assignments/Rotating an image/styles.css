@@ -7,7 +7,7 @@ body {
 img {
     width: 350px;
     filter: blur(10px);
-    cursor: pointer;
+    cursor: pointer auto;
     transition-property: transform, filter, width;
     transition-duration: .9s, 0.2s ;
     transition-delay: .2s;
