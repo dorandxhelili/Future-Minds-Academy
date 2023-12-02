@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 2fr 8fr;
+    height: 100vh;
+}
+
+.aside {
+    background-image: url(images/sidebar-1.jpg);
+    background-color: rgb(0, 0, 0, 0.7);
+    background-blend-mode: color;
+}
+
+.aside-h1 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    text-transform: uppercase;
+    color: white;
+}
+
+.listItems {
+    margin: 10px 10px;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.listItems:hover {
+    background-color: red;
+}
+
+.listItems.active {
+    background-color: red;
+}
+
+.listItems-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.listItems-info img {
+    width: 40px;
+    border-radius: 30px;
+    height: auto;
+}
+
+.listItems-info p {
+    color: white;
+}
+
+.material-symbols-outlined {
+    height: auto;
+    width: 40px;
+}
+
+.color {
+    color: white;
+}
+
+/* Header */
+
+header {
+    grid-row: 2 / 6;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+
+}
+
+.header-circle {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-end {
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+    position: relative;
+}
+
+.header-span {
+    position: absolute;
+    left: 200vh;
+    bottom: 95vh;
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    border-radius: 24px;
+    font-size: 0.8em;
+    text-align: center;
+    color: white;
+}
+
+
+main {
+    padding: 2% 2% 2% 2%;
+    background-color: rgb(236, 236, 236);
+}
+
+.flexcenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*  per me perdor per kejtat mos me perserit    */
+}
+
+.circle {
+    width: 30px;
+}
