@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Even or Odd?</title>
+</head>
+<body>
+    <script>
+        let userNumber = parseInt(prompt('Enter a number:'));
+
+        if (isNaN(userNumber)){
+            alert('Write a valid number');
+        }
+
+        else {
+            let result = (userNumber % 2 === 0) ? 'even' : 'odd';
+            console.log(`${userNumber} is ${result}`);
+        }
+
+    </script>
+    
+</body>
+</html>
