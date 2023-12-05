@@ -1,0 +1,25 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leap Year</title>
+</head>
+
+<body>
+    <script>
+        let userYear = parseInt(prompt('Enter a year:'));
+
+        if (isNaN(userYear)) {
+            alert('Please enter a valid year.');
+        } else {
+            if ((userYear % 4 === 0 && userYear % 100 !== 0) || (userYear % 400 === 0)) {
+                console.log(`${userYear} is a Leap Year.`);
+            } else {
+                console.log(`${userYear} is not a Leap Year.`);
+            }
+        }
+    </script>
+</body>
+
+</html>
