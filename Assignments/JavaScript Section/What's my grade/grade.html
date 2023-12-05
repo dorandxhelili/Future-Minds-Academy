@@ -1,0 +1,40 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What's my grade?</title>
+</head>
+
+<body>
+    <script>
+        let userGrade = parseInt(prompt('Write your points:'));
+
+        if (isNaN(userGrade) || userGrade < 0 || userGrade > 100) {
+            alert('Write a valid number from 0 to 100')
+        }
+
+        else if (userGrade >= 0 && userGrade <= 19) {
+            console.log('You have got Grade 1');
+        }
+
+        else if (userGrade >= 20 && userGrade <= 39) {
+            console.log('You have got Grade 2');
+        }
+
+        else if (userGrade >= 40 && userGrade <= 59) {
+            console.log('You have got Grade 3');
+        }
+
+        else if (userGrade >= 60 && userGrade <= 79) {
+            console.log('You have got Grade 4');
+        }
+
+        else if (userGrade >= 80 && userGrade <= 100) {
+            console.log('You have got Excellent Grade 5');
+        }
+    </script>
+
+</body>
+
+</html>
