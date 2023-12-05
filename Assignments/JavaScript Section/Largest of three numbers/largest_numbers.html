@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Largest of three numbers</title>
+</head>
+<body>
+    <script>
+        let a = parseFloat(prompt('Enter the first number:'));
+        let b = parseFloat(prompt('Enter second number:'));
+        let c = parseFloat(prompt('Enter third number:'));
+
+        if (isNaN(a) || isNaN(b) || isNaN(b)){
+            alert('Enter a valid numbers.');
+        }
+        else {
+            let largestNumber = Math.max(a, b, c);
+            alert(`The largest number is: ${largestNumber}`);
+        }
+
+        /* let a = parseFloat(prompt('Enter the first number:'));
+        let b = parseFloat(prompt('Enter second number:'));
+        let c = parseFloat(prompt('Enter third number:'));
+
+        if (isNaN(a) || isNaN(b) || isNaN(b)){
+            alert('Enter a valid numbers.');
+        } else {
+            let largestNumber;
+
+            if (a >= b && a >=c) {
+                largestNumber = a;
+            }
+            else if (b >= a && b >=c){
+                largestNumber = b;
+            }
+            else {
+                largestNumber = c;
+            }
+            alert(`The largest number is: ${largestNumber}`);
+        }*/
+    </script>
+</body>
+</html>
