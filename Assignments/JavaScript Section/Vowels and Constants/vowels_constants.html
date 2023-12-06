@@ -1,0 +1,44 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vowels and Constants</title>
+</head>
+
+<body>
+    <script>
+        let userPrompt = prompt('Write what do you want to check:');
+        let vowels = 'aeiouy';
+        let constant = 'bcdfghjklmnpqrstvxyzwy'
+        let number = '0123456789';
+        let symbols = '!@#$%^&*()_+=/';
+
+        userPrompt = userPrompt.toLowerCase();
+
+        if (userPrompt.length !== 1) {
+            alert('Please write only one character');
+
+        }
+        else {
+            if (vowels.includes(userPrompt)) {
+                alert('The character that you typed is a vowel!');
+            }
+            else if (constant.includes(userPrompt)) {
+                alert('The character that you typed is a constant');
+            }
+            else if (number.includes(userPrompt)) {
+                alert('The character that you typed is a number');
+            }
+            else if (symbols.includes(userPrompt)) {
+                alert('The character that you typed is a symbol');
+            }
+            else {
+                alert('Your character is invalid');
+            }
+        }
+
+    </script>
+</body>
+
+</html>
