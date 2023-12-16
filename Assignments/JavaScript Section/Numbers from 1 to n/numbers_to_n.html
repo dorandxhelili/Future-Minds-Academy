@@ -1,0 +1,32 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numbers from 1 to <Nav></Nav>
+    </title>
+</head>
+
+<body>
+    <script>
+        let n = parseInt(prompt('Shkruani një numër pozitiv (n):'));
+
+        if (isNaN(n) || n < 1) {
+            alert('Ju lutemi shkruani një numër pozitiv të vlefshëm.');
+        } else {
+            let numbers = '';
+            let i = 1;
+
+            while (i <= n && i <= 100) {
+                numbers += i + ' ';
+                i++;
+            }
+
+            console.log(`Numrat nga 1 deri në ${n}: ${numbers}`);
+            alert(`Numrat nga 1 deri në ${n}: ${numbers}`);
+        }
+
+    </script>
+</body>
+
+</html>
