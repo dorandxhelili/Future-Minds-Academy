@@ -1,0 +1,35 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum of numbers</title>
+</head>
+
+<body>
+    <script>
+        let sum = 0;
+        let userInput;
+
+        while (true) {
+            userInput = parseFloat(prompt('Enter a positive number (enter 0 to finish):'));
+
+            if (isNaN(userInput)) {
+                alert('Please enter a valid number.');
+            } else if (userInput < 0) {
+                alert('Please enter a positive number.');
+            } else {
+                sum += userInput;
+            }
+
+            if (userInput === 0) {
+                break; // 
+            }
+        }
+        alert(`The sum of the numbers you wrote is equal to ${sum}`)
+        console.log(`The sum of the numbers you wrote is equal to ${sum}.`);
+    </script>
+
+</body>
+
+</html>
