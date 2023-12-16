@@ -1,0 +1,34 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maximum of 3 tries</title>
+</head>
+
+<body>
+    <script>
+        let correctPassword = "12341234";
+        let maxAttempts = 3;
+        let attempts = 0;
+
+        do {
+            let userGuess = prompt(`Enter the password:`);
+
+            if (userGuess === correctPassword) {
+                alert("Welcome! You guessed the correct password.");
+                break;
+            } else {
+                attempts++;
+                let remainingAttempts = maxAttempts - attempts;
+                alert(`Incorrect password. You have ${remainingAttempts} ${remainingAttempts === 1 ? 'try' : 'tries'} left.`);
+            }
+        } while (attempts < maxAttempts);
+
+        if (attempts === maxAttempts) {
+            alert("Sorry, you've reached the maximum number of attempts. You can't try anymore.");
+        }
+    </script>
+</body>
+
+</html>
