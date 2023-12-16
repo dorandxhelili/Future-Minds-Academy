@@ -1,0 +1,24 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess until correct</title>
+</head>
+
+<body>
+    <script>
+        let userInput
+        let number = 0;
+        const random = Math.floor(Math.random() * 6) + 1;
+
+        do {
+            userInput = parseInt(prompt('Qelloja numrit;'));
+            number++
+        }
+        while (userInput !== random)
+        alert(`Ju keni provuar ${number} ${number == 1 ? 'here' : 'hera'} per ta gjetur`);
+    </script>
+</body>
+
+</html>
