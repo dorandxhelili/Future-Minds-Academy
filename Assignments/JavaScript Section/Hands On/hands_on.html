@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+    <link rel="icon" type="image/x-icon" href="facebook.png">
+</head>
+<body>
+    <script>
+        let defaultTitle = document.title;
+        let faviconElement = document.querySelector("link[rel~='icon']");
+        let defaultFavicon = faviconElement.href;
+        let bellIconLink = getBellIconLink();
+
+        let isInDefaultState = true;
+        let notificationInterval;
+
+        function startNotification (message){
+            if (notificationInterval)   
+                endNotification();
+
+            notificationInterval = setInterval(() => {
+                if (isInDefaultState)
+                    setToNotification(message)
+                else
+                    resetToDefaults();
+
+                isInDefaultState = !isInDefaultState;
+            }, 1000);
+        }
+
+        function endNotification(){
+            clearInterval(notificationInterval);
+            resetToDefaults();
+        }
+
+        function resetToDefaults(){
+            document.title = defaultTitle;
+            faviconElement = defaultFavicon;
+        }
+
+        function setToNotification (message){
+            document.title = message;
+            faviconElement.href = bellIconLink;
+        }
+
+        function getBellIconLink (){
+            const canvas = document.createElement('canvas');
+            canvas.width = 32;
+            canvas.height = 32;
+            const context = canvas.getContext('2d');
+            context.font = '32px sans-serif';
+            context.fillText('A', 0, 30);
+
+            return canvas.toDataURL('image/png');
+        }
+    </script>
+</body>
+</html>
