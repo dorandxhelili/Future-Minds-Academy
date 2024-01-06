@@ -3,38 +3,33 @@
 }
 
 body {
-    margin: 0;
-    height: 100vh;
+    font-family: Arial, sans-serif;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
 .progress-bar-container {
-    margin-inline: 1rem;
-    padding: 0.5rem;
     display: flex;
-    gap: 0.5rem;
-}
-
-.indicator {
-    font-family: monospace;
-    font-size: 0.9rem;
-    color: gray;
-
+    flex-direction: column;
+    width: 1.5rem;
 }
 
 .progress-bar-wrapper {
-    flex-grow: 1;
+    width: 24px;
+    height: 560px;
     position: relative;
-    height: 200px;
+    margin: 14px 1px;
 }
 
 .progress-bar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 20px;
-    background-color: green;
+    width: 100%;
+    height: 0;
+}
+
+.indicator {
+    font-weight: bold;
+    text-align: center;
 }
