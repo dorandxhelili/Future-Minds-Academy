@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reveal Password</title>
+    <style>
+        body {
+            display: flex;
+            height: 100vh;
+            margin: 20px;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+        }
+
+        .input-container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label,
+        input {
+            font-size: 1.3em;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="input-container">
+        <label for="password">Password:</label>
+        <input type="password" id="passwordInput" style="width: 200px; height: 30px;">
+    </div>
+
+    <script>
+        const passwordInput = document.getElementById('passwordInput');
+
+        passwordInput.addEventListener('mouseenter', function () {
+            passwordInput.type = 'text';
+        });
+
+        passwordInput.addEventListener('mouseleave', function () {
+            passwordInput.type = 'password';
+        });
+    </script>
+
+</body>
+
+</html>
